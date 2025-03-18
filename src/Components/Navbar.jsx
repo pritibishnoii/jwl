@@ -24,11 +24,11 @@ const Navbar = () => {
     return (
         <div className='w-full flex items-center justify-between py-8 relative'>
             {/* Logo */ }
-            <div className='w-1/4 flex justify-center'>
+            <div className='w-1/4 flex justify-center cursor-pointer '>
                 <Image
                     src="/assets/images/jwl_logo.svg"
-                    width={ 100 }
-                    height={ 100 }
+                    width={ 150 }
+                    height={ 150 }
                     alt='logo'
                     className=''
                 />
@@ -46,8 +46,8 @@ const Navbar = () => {
 
             {/* Desktop Navigation and Contact Button (hidden on small screens, visible on medium and larger screens) */ }
             <div className='hidden md:flex md:w-1/2 items-center justify-between'>
-                <nav className='w-3/4 border border-[#C0C0C0] py-4 px-4 rounded-full'>
-                    <ul className='flex justify-around w-full text-[#1E1E1E]'>
+                <nav className='w-full border-2 border-[#C0C0C0] py-4 px-4 rounded-full flex justify-center'>
+                    <ul className='flex justify-around w-3/4  text-[#1E1E1E]'>
                         { navLinks.slice( 0, -1 ).map( ( link, index ) => (
                             <li key={ index }>
                                 <Link href={ link.href } className='hover:text-[#8b6125]'>
@@ -57,23 +57,22 @@ const Navbar = () => {
                         ) ) }
                     </ul>
                 </nav>
+            </div>
 
-                <div className='w-1/4 flex justify-center'>
-                    <div className='w-3/4 flex py-3 justify-center px-4 bg-black rounded-full text-white gap-2 items-center hover:bg-gray-800 transition-all duration-300 cursor-pointer'>
-                        <button className='text-sm md:text-base lg:text-lg cursor-pointer'>
-                            Contact Us
-                        </button>
-                        <GoArrowUpRight className='text-sm md:text-base lg:text-lg' />
-                    </div>
+            <div className='hidden w-1/4 md:flex justify-center'>
+                <div className='w-48 flex py-4 justify-center px-4 bg-black rounded-full text-white gap-2 items-center hover:bg-gray-800 transition-all duration-300 cursor-pointer'>
+                    <button className='text-sm md:text-base lg:text-lg cursor-pointer'>
+                        Contact Us
+                    </button>
+                    <GoArrowUpRight className='text-sm md:text-base lg:text-lg' />
                 </div>
             </div>
 
             {/* Mobile Menu (visible on small screens when activeMenu is true) */ }
             { activeMenu && (
-                <div className='fixed inset-0 bg-black bg-opacity-50 z-40' onClick={ toggleMenu }>
+                <div className='' onClick={ toggleMenu }>
                     <div
-                        className='fixed top-0 right-0 w-48 bg-[#8b6125] h-full p-6 z-50 shadow-lg'
-                        onClick={ ( e ) => e.stopPropagation() }
+                        className='fixed top-0 right-0 w-48 bg-[#8b6125] h-98 p-6 z-50 shadow-lg'
                     >
                         {/* Close Button */ }
                         <button
