@@ -59,15 +59,6 @@ const Navbar = () => {
                 </nav>
             </div>
 
-            <div className='hidden w-1/4 md:flex justify-center'>
-                <div className='w-48 flex py-4 justify-center px-4 bg-black rounded-full text-white gap-2 items-center hover:bg-gray-800 transition-all duration-300 cursor-pointer'>
-                    <button className='text-sm md:text-base lg:text-lg cursor-pointer'>
-                        Contact Us
-                    </button>
-                    <GoArrowUpRight className='text-sm md:text-base lg:text-lg' />
-                </div>
-            </div>
-
             {/* Mobile Menu (visible on small screens when activeMenu is true) */ }
             { activeMenu && (
                 <div className='' onClick={ toggleMenu }>
@@ -97,6 +88,18 @@ const Navbar = () => {
                     </div>
                 </div>
             ) }
+
+
+            <div className='hidden w-1/4 md:flex justify-center'>
+                <div className='w-48 flex py-4 justify-center px-4 bg-black rounded-full text-white gap-2 items-center hover:bg-gray-800 transition-all duration-300 cursor-pointer'>
+                    <button className='text-sm md:text-base lg:text-lg cursor-pointer'>
+                        Contact Us
+                    </button>
+                    <GoArrowUpRight className='text-sm md:text-base lg:text-lg' />
+                </div>
+            </div>
+
+
         </div>
     );
 };
