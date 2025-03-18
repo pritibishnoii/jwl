@@ -26,9 +26,9 @@ const Navbar = () => {
             {/* Logo */ }
             <div className='w-1/4 flex justify-center'>
                 <Image
-                    src="/assets/images/jwl_logo.png"
-                    width={ 500 }
-                    height={ 500 }
+                    src="/assets/images/jwl_logo.svg"
+                    width={ 100 }
+                    height={ 100 }
                     alt='logo'
                     className=''
                 />
@@ -45,12 +45,12 @@ const Navbar = () => {
             </div>
 
             {/* Desktop Navigation and Contact Button (hidden on small screens, visible on medium and larger screens) */ }
-            <div className='hidden md:flex md:w-3/4 items-center justify-between'>
-                <nav className='w-1/2 border border-[#C0C0C0] py-4 px-4 rounded-full'>
+            <div className='hidden md:flex md:w-1/2 items-center justify-between'>
+                <nav className='w-3/4 border border-[#C0C0C0] py-4 px-4 rounded-full'>
                     <ul className='flex justify-around w-full text-[#1E1E1E]'>
                         { navLinks.slice( 0, -1 ).map( ( link, index ) => (
                             <li key={ index }>
-                                <Link href={ link.href } className='hover:text-gray-600'>
+                                <Link href={ link.href } className='hover:text-[#8b6125]'>
                                     { link.label }
                                 </Link>
                             </li>
