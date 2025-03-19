@@ -6,7 +6,7 @@ import { GoArrowUpRight } from 'react-icons/go';
 const Hero = () => {
     return (
         <div
-            className="bg-[url('/assets/images/boximg.svg')] bg-cover bg-center h-screen"
+            className="bg-[url('/assets/images/boximg.svg')] bg-cover bg-center h-full"
         >
             {/* Navbar */ }
             <div className=''>
@@ -14,33 +14,33 @@ const Hero = () => {
             </div>
 
             {/* Hero Content */ }
-            <div className='flex flex-col relative h-max  justify-center items-center'>
+            <div className='flex flex-col relative h-max  justify-center '>
                 {/* Sun Logo and Heading */ }
-                <div className='w-full h-full  flex flex-col justify-center items-center py-4 sm:py-8'>
+                <div className='w-full   h-full flex flex-col items-center  sm:py-8 '>
                     {/* Sun Logo */ }
-                    <div className='w-16 h-16 sm:w-20 sm:h-20'>
+                    <div className='sm:w-20 sm:h-20  flex items-center justify-center '>
                         <Image
                             src="/assets/images/suniso.png"
                             width={ 50 }
                             height={ 50 }
                             alt="coin"
-                            className='w-full h-full'
+                            className=''
                         />
                     </div>
 
                     {/* Heading */ }
-                    <div className='w-full sm:w-3/4 lg:w-1/2 py-4 sm:py-8 flex items-center justify-center h-max'>
-                        <h1 className='text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-center font-semibold'>
+                    <div className='w-full sm:w-3/4 lg:w-1/2 py-2  flex items-center justify-center h-max'>
+                        <h1 className='text-2xl sm:text-2xl md:text-4xl lg:text-5xl text-center font-semibold'>
                             Transforming Tradition, Elevating Business, Embracing Digital Success!
                         </h1>
                     </div>
 
                     {/* Diamond Image */ }
-                    <div className='w-full sm:w-3/4 lg:w-1/2 py-4 flex justify-center'>
+                    <div className='w-full sm:w-3/4 lg:w-1/2  flex justify-center'>
                         <Image
                             src="/assets/images/diamond.png"
-                            width={ 600 }
-                            height={ 600 }
+                            width={ 500 }
+                            height={ 500 }
                             alt="diamond-logo"
                             className='w-full h-auto max-w-[400px] sm:max-w-[500px] lg:max-w-[600px]'
                         />
@@ -48,8 +48,8 @@ const Hero = () => {
 
 
                     {/* Try a Demo Button */ }
-                    <div className='w-full flex justify-center sm:mt-8'>
-                        <div className='w-48 flex py-3 sm:py-4 justify-center px-4 bg-[#BB853A] rounded-full text-white gap-2 items-center hover:bg-gray-800 transition-all duration-300 cursor-pointer'>
+                    <div className='w-full flex justify-center'>
+                        <div className='w-48 flex py-3 justify-center px-3 bg-[#BB853A] rounded-full text-white gap-2 items-center hover:bg-gray-800 transition-all duration-300 cursor-pointer'>
                             <button className='text-sm sm:text-base lg:text-lg cursor-pointer'>
                                 Try a Demo
                             </button>
@@ -66,7 +66,7 @@ const Hero = () => {
                         width={ 150 }
                         height={ 150 }
                         alt="coin"
-                        className='w-24 h-24 sm:w-32 sm:h-32 lg:w-40 lg:h-40'
+                        className='w-16  md:w-24 md:h-24 '
                     />
                 </div>
             </div>

@@ -35,12 +35,12 @@ const Navbar = () => {
             </div>
 
             {/* Mobile Menu Icon (visible on small screens) */ }
-            <div className='md:hidden'>
+            <div className='md:hidden '>
                 <button
                     className='bg-black text-white w-12 h-12 flex justify-center items-center rounded-full cursor-pointer'
                     onClick={ toggleMenu }
                 >
-                    <LuMenu className='text-2xl' />
+                    { activeMenu ? <RxCross2 className='text-xl' /> : <LuMenu className='text-2xl' /> }
                 </button>
             </div>
 
@@ -61,7 +61,7 @@ const Navbar = () => {
 
             {/* Mobile Menu (visible on small screens when activeMenu is true) */ }
             { activeMenu && (
-                <div className='' onClick={ toggleMenu }>
+                <div className=''>
                     <div
                         className='fixed top-0 right-0 w-48 bg-[#8b6125] h-98 p-6 z-50 shadow-lg'
                     >
