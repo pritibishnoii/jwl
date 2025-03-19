@@ -16,10 +16,10 @@ const MiddleCards = () => {
 
 
                 {/* second row  */ }
-                <div className='w-2 '>
+                <div className='w-1 h-68 py-2 '>
                     <Image
                         src={ hLine }
-                        width={ 2 }
+                        width={ 1 }
                         height={ 1 }
                         alt="line"
                     />
