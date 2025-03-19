@@ -7,7 +7,7 @@ const MiddleCards = () => {
     return (
         <div className='w-full h-max bg-white '>
 
-            <div className='flex w-full h-max bg-white'>
+            <div className='flex w-full h-max bg-red-300'>
                 {/* first row  */ }
                 {/* heading  */ }
                 <div className='w-1/2  flex h-68 justify-center items-center'>
