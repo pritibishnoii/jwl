@@ -1,5 +1,8 @@
 import Hero from "@/components/Hero";
 import MiddleCards from "@/components/MiddleCards";
+import Cards from "@/components/Cards";
+import Footer from "Components/Footer";
+
 
 
 export default function Home () {
@@ -7,6 +10,8 @@ export default function Home () {
     <div className="w-full h-full ">
       <Hero />
       <MiddleCards />
+      <Cards />
+      <Footer />
     </div>
   );
 }

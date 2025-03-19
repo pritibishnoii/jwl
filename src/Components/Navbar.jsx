@@ -24,7 +24,7 @@ const Navbar = () => {
     return (
         <div className='w-full flex items-center justify-between py-8 relative'>
             {/* Logo */ }
-            <div className='w-1/4 flex justify-center cursor-pointer '>
+            <div className='w-1/4 flex justify-center cursor-pointer mx-2'>
                 <Image
                     src="/assets/images/jwl_logo.svg"
                     width={ 150 }
@@ -35,7 +35,7 @@ const Navbar = () => {
             </div>
 
             {/* Mobile Menu Icon (visible on small screens) */ }
-            <div className='md:hidden '>
+            <div className='md:hidden  px-2'>
                 <button
                     className='bg-black text-white w-12 h-12 flex justify-center items-center rounded-full cursor-pointer'
                     onClick={ toggleMenu }
@@ -91,7 +91,7 @@ const Navbar = () => {
 
 
             <div className='hidden w-1/4 md:flex justify-center'>
-                <div className='w-48 flex py-4 justify-center px-4 bg-black rounded-full text-white gap-2 items-center hover:bg-gray-800 transition-all duration-300 cursor-pointer'>
+                <div className='w-48 flex py-4 justify-center px-4 bg-black rounded-full text-white gap-2 items-center hover:bg-[#BB853A] transition-all duration-300 cursor-pointer'>
                     <button className='text-sm md:text-base lg:text-lg cursor-pointer'>
                         Contact Us
                     </button>
