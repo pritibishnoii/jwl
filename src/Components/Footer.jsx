@@ -5,6 +5,7 @@ import { IoIosArrowDroprightCircle } from "react-icons/io";
 import { FaTwitter } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa6";
 import { IoLogoYoutube } from "react-icons/io";
+import jwlFooter from '../../public/assets/images/footerjwlnet.png'
 
 const Footer = () => {
     return (
@@ -46,10 +47,11 @@ const Footer = () => {
 
             <div className='w-full h-max flex justify-center items-center '>
                 <Image
-                    src=""
+                    src={ jwlFooter }
                     width={ 200 }
                     height={ 200 }
                     alt="footerlogo"
+                    className='md:w-3/4'
                 />
             </div>
 

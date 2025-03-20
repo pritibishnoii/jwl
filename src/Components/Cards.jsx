@@ -1,3 +1,4 @@
+"use client"
 import React from 'react'
 import Image from 'next/image'
 import img1 from '../../public/assets/images/cards/img1.png'
@@ -6,6 +7,7 @@ import img3 from '../../public/assets/images/cards/img3.png'
 import img4 from '../../public/assets/images/cards/img4.png'
 import img5 from '../../public/assets/images/cards/img5.png'
 import img6 from '../../public/assets/images/cards/img6.png'
+import gitfImg from '../../public/assets/images/gift.png'
 
 const Cards = () => {
 
@@ -48,7 +50,7 @@ const Cards = () => {
                 <h1 className='text-sm font-semibold  w-3/4 text-center md:w-1/2 md:text-xl md:text-left' >"Gift Your Jewelry Business the Power of Online Success – Reach More Customers, Boost Sales, and Shine Brighter in the Digital World!"</h1>
                 <div className='w-1/3  md:px-6'>
                     <Image
-                        src="/assets/images/gift.png"
+                        src={ gitfImg }
                         width={ 200 }
                         height={ 200 }
                         alt='gift-img'

@@ -8,6 +8,7 @@ import coinsImg from '../../public/assets/images/coins.png'
 import paintImg from '../../public/assets/images/paint.png'
 import robotImg from '../../public/assets/images/robot.png'
 import coin from '../../public/assets/images/coin.png'
+import howit from '../../public/assets/images/howit.png'
 
 const MiddleCards = () => {
 
@@ -100,7 +101,7 @@ const MiddleCards = () => {
             <div className='flex w-full h-max py-2 items-center px-4 md:px-8 lg:px-16'>
                 <div className='w-1/2 h-max'>
                     <Image
-                        src={ whyThrive }
+                        src={ howit }
                         width={ 200 }
                         height={ 200 }
                         alt="img"

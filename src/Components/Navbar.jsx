@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { GoArrowUpRight } from "react-icons/go";
 import { LuMenu } from "react-icons/lu";
 import { RxCross2 } from "react-icons/rx";
+import navLogo from '../../public/assets/images/jwl_logo.svg'
 
 const Navbar = () => {
     const [ activeMenu, setActiveMenu ] = useState( false );
@@ -26,7 +27,7 @@ const Navbar = () => {
             {/* Logo */ }
             <div className='w-1/4 flex justify-center cursor-pointer mx-2'>
                 <Image
-                    src="/assets/images/jwl_logo.svg"
+                    src={ navLogo }
                     width={ 150 }
                     height={ 150 }
                     alt='logo'

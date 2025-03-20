@@ -1,7 +1,11 @@
+"use client"
 import React from 'react';
 import Navbar from './Navbar';
 import Image from 'next/image';
 import { GoArrowUpRight } from 'react-icons/go';
+import sunImg from '../../public/assets/images/suniso.png'
+import coinImg from '../../public/assets/images/coin.png'
+import diamondImg from '../../public/assets/images/diamond.png'
 
 const Hero = () => {
     return (
@@ -20,11 +24,11 @@ const Hero = () => {
                     {/* Sun Logo */ }
                     <div className='sm:w-20 sm:h-20  flex items-center justify-center '>
                         <Image
-                            src="/assets/images/suniso.png"
+                            src={ sunImg }
                             width={ 50 }
                             height={ 50 }
                             alt="coin"
-                            className=''
+
                         />
                     </div>
 
@@ -38,7 +42,7 @@ const Hero = () => {
                     {/* Diamond Image */ }
                     <div className='w-full sm:w-3/4 lg:w-1/2  flex justify-center'>
                         <Image
-                            src="/assets/images/diamond.png"
+                            src={ diamondImg }
                             width={ 500 }
                             height={ 500 }
                             alt="diamond-logo"
@@ -62,7 +66,7 @@ const Hero = () => {
                 {/* Coin Image */ }
                 <div className='absolute bottom-0 left-2 sm:left-4'>
                     <Image
-                        src="/assets/images/coin.png"
+                        src={ coinImg }
                         width={ 150 }
                         height={ 150 }
                         alt="coin"
