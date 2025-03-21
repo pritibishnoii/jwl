@@ -5,7 +5,7 @@ import { IoIosArrowDroprightCircle } from "react-icons/io";
 import { FaTwitter } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa6";
 import { IoLogoYoutube } from "react-icons/io";
-import jwlFooter from '../../public/assets/images/footerjwlnet.png'
+import jwlFooter from '/assets/images/footerjwlnet.png'
 
 const Footer = () => {
     return (

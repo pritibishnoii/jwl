@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { GoArrowUpRight } from "react-icons/go";
 import { LuMenu } from "react-icons/lu";
 import { RxCross2 } from "react-icons/rx";
-import navLogo from '../../public/assets/images/jwl_logo.svg'
+import navLogo from '../public/assets/images/jwl_logo.svg'
 
 const Navbar = () => {
     const [ activeMenu, setActiveMenu ] = useState( false );
