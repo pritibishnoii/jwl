@@ -1,4 +1,4 @@
-"use client"
+
 import React from 'react'
 import Image from 'next/image';
 import { IoIosArrowDroprightCircle } from "react-icons/io";

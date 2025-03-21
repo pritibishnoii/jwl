@@ -76,7 +76,7 @@ const MiddleCards = () => {
                 { metaData.map( ( items, index ) => {
                     return (
                         <div
-                            className={ `flex justify-between  gap-2 h-max    ${ activeCard === index ? 'bg-[#BB853A]' : 'bg-white border-b border-[#ABABAB] ' }` }
+                            className={ `flex justify-between  gap-2 h-max hover:bg-[#BB853A] transition-transform duration-300 ease-in-out cursor-pointer  ${ activeCard === index ? 'bg-[#BB853A]' : 'bg-white border-b border-[#ABABAB] ' }` }
                             key={ items.id }
                             onClick={ () => setActiveCard( index ) }
                         >
