@@ -42,7 +42,7 @@ const MiddleCards = () => {
             <div className='flex w-full h-max px-4 md:px-8 lg:px-16'>
                 {/* first row */ }
                 {/* heading */ }
-                <div className='w-1/2 flex h-68 justify-center items-center p-1  ' >
+                <div className='w-1/2 flex h-68 justify-center items-center p-1' >
                     <p className='text-[10px] md:text-lg lg:text-base md:w-2/3 md:px-2'>
                         E-commerce offers global reach and 24/7 accessibility, boosting sales while cutting operational costs. It’s the future of business, driving growth and convenience.
                     </p>
@@ -98,33 +98,33 @@ const MiddleCards = () => {
             </div>
 
             {/* image robot */ }
-            <div className='flex w-full h-max py-2 items-center px-4 md:px-8 lg:px-16'>
+            <div className='flex w-full h-max py-2 items-center px-4 md:px-8 lg:px-16 '>
                 <div className='w-1/2 h-max'>
                     <Image
                         src={ howit }
                         width={ 200 }
                         height={ 200 }
                         alt="img"
-                        className='w-32 md:w-48 lg:w-64'
+                        className='w-32 md:w-68 lg:w-98'
                     />
                 </div>
                 <div className='w-1/2 flex justify-between py-4 items-center'>
-                    <div className='w-3/4 h-max'>
+                    <div className='w-3/4 h-max '>
                         <Image
                             src={ robotImg }
                             width={ 400 }
                             height={ 400 }
                             alt="robot"
-                            className='w-48 md:w-64 lg:w-80'
+                            className='w-48 md:w-68 lg:w-120'
                         />
                     </div>
-                    <div className='w-1/4 relative h-28'>
+                    <div className='w-1/4 relative h-28 md:h-48'>
                         <Image
                             src={ coin }
                             width={ 40 }
                             height={ 40 }
                             alt="coin"
-                            className='absolute bottom-3 right-1 w-8 md:w-12 lg:w-16'
+                            className='absolute bottom-3 right-1 w-8 md:w-12 lg:w-48 md:28 md:top-28'
                         />
                     </div>
                 </div>
