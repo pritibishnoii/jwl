@@ -1,7 +1,7 @@
 import Hero from "@/components/Hero";
 import MiddleCards from "@/components/MiddleCards";
 import Cards from "@/components/Cards";
-import Footer from "Components/Footer";
+import Footer from "@/components/Footer";
 
 
 
