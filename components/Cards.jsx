@@ -100,10 +100,8 @@ const Cards = () => {
                     </div>
 
                 </div>
-                </div>
-
-
             </div>
+
 
             <div className='flex w-full h-max py-12  items-center justify-center  md:justify-between  md:mx-auto'>
                 <h1 className='text-sm font-semibold  w-3/4 text-center md:w-1/2 md:text-xl md:text-left' >"Gift Your Jewelry Business the Power of Online Success – Reach More Customers, Boost Sales, and Shine Brighter in the Digital World!"</h1>
@@ -118,7 +116,6 @@ const Cards = () => {
             </div>
 
 
-        </>
         </>
     )
 }
