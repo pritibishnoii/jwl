@@ -7,6 +7,7 @@ const Cards = () => {
 
     const metaData = [
         { id: 1, title: "Building Trust", img: '/assets/images/cards/img1.png', description: "Positive reviews and testimonials boost credibility." },
+        { id: 1, title: "Building Trust", img: '/assets/images/cards/img1.png', description: "Positive reviews and testimonials boost credibility." },
         { id: 2, title: "Direct Customer Interaction", img: '/assets/images/cards/img2.png', description: "Engage with potential buyers through social media, answering queries and sharing updates." },
         { id: 3, title: "Increased Reach ", img: '/assets/images/cards/img3.png', description: "Attract customers beyond the local market and tap into a global audience." },
         { id: 4, title: "Cost-Effective Marketing", img: '/assets/images/cards/img4.png', description: "Use SEO, paid ads, and influencer collaborations to drive traffic without heavy advertising costs" },
@@ -99,6 +100,7 @@ const Cards = () => {
                     </div>
 
                 </div>
+                </div>
 
 
             </div>
@@ -116,6 +118,7 @@ const Cards = () => {
             </div>
 
 
+        </>
         </>
     )
 }

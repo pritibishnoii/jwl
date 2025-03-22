@@ -11,7 +11,7 @@ const Footer = () => {
     return (
         <div className='bg-[#000000D9] w-full h-max '>
             <div className='md:flex w-full md:justify-between'>
-                <div className='w-full py-8 px-6 flex flex-col justify-center  gap-4  md:w-1/2  md:px-12 '>
+                <div className='w-full py-8 px-6 flex flex-col justify-center  gap-4  lg:w-1/4  lg:pl-20 '>
                     <h1 className='text-md text-white md:text-xl'>NEWSLETTER</h1>
                     <p className='text-sm text-white'>Sign up for our newsletter and get the latest
                         updates, news and product offers via email.</p>
@@ -60,7 +60,7 @@ const Footer = () => {
             </div>
 
             <div className='w-full  flex '>
-                <span className='text-white text-sm  w-1/2  md:flex md:justify-center md:text-lg'>© JWLnet | 2025 | All rights reserved</span>
+                <span className='text-white text-sm  w-1/2  md:flex md:justify-center md:text-lg md:py-3'>© JWLnet | 2025 | All rights reserved</span>
 
                 <span className='w-[1px] h-8 bg-white'></span>
 
