@@ -70,7 +70,7 @@ const Hero = () => {
                         width={ 150 }
                         height={ 150 }
                         alt="coin"
-                        className='w-16  md:w-24 md:h-24 '
+                        className='w-16  md:w-38 '
                     />
                 </div>
             </div>

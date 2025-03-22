@@ -22,7 +22,6 @@ const Footer = () => {
                         />
                         <IoIosArrowDroprightCircle className='text-white text-3xl' />
                     </label>
-
                 </div>
 
                 {/* buttons */ }
@@ -40,17 +39,15 @@ const Footer = () => {
 
                 </div>
             </div>
-
-
             <div className='w-full  h-8  py-8'>
                 <hr className='text-white' />
             </div>
 
-            <div className='w-full h-98 flex relative  justify-center '>
-                <div className='w-1/2 h-max  flex justify-center relative'>
+            <div className='w-[80%] h-98 flex relative  justify-center '>
+                <div className='w-2/3 h-max  flex justify-center relative '>
                     <h1 className='lg:text-[340px] text-white font-bold  absolute -top-28 '>JWL</h1>
                 </div>
-                <div className='relative w-1/2 h-full  flex justify-center pt-40'>
+                <div className='relative w- h-full  flex justify-center pt-40'>
                     <Image
                         src={ orangLine }
                         width={ 400 }
@@ -64,20 +61,15 @@ const Footer = () => {
                         height={ 20 }
                         alt="footerlogo"
                         className='md:w-68 md:h-max absolute'
-
                     />
                 </div>
             </div>
-
             <div className='w-full '>
                 <hr className='text-white' />
             </div>
-
             <div className='w-full  flex '>
                 <span className='text-white text-sm  w-1/2  md:flex md:justify-center md:text-lg md:py-3'>© JWLnet | 2025 | All rights reserved</span>
-
                 <span className='w-[1px] h-8 bg-white'></span>
-
                 {/* social icons  */ }
                 <div className='md:w-1/2 md:flex  hidden gap-2 h-max justify-center py-2
                 '>
@@ -92,7 +84,6 @@ const Footer = () => {
                     </span>
                 </div>
             </div>
-
         </div>
     )
 }
