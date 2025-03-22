@@ -80,109 +80,115 @@ const Cards = () => {
     ]
     return (
         <>
-            <div className='w-full flex gap-4 md:px-[250px] mx-auto '>
+            <div className='w-full flex flex-col justify-center h-max items-center '>
+
+                <div className='w-full flex gap-4 md:px-[250px] mx-auto'>
 
 
-                <div className=' gap-4 w-[50%] flex flex-col'>
+                    <div className=' gap-4 w-[50%] flex flex-col'>
 
-                    <div className='bg-[#BB853A99] rounded-2xl py-6 px-4 flex flex-col items-center justify-center gap-4 min-h-[320px]'>
-                        <h1 className='text-md font-semibold md:text-2xl'>{ metaData[ 0 ].title }</h1>
-                        <div className=''>
-                            <Image
-                                src={ metaData[ 0 ].img }
-                                width={ 100 }
-                                height={ 100 }
-                                alt='card1'
-                                className='md:w-38'
-                            />
+                        <div className='bg-[#BB853A99] rounded-2xl py-6 px-4 flex flex-col items-center justify-center gap-4 min-h-[320px]'>
+                            <h1 className='text-md font-semibold '>{ metaData[ 0 ].title }</h1>
+                            <div className=''>
+                                <Image
+                                    src={ metaData[ 0 ].img }
+                                    width={ 100 }
+                                    height={ 100 }
+                                    alt='card1'
+                                />
+                            </div>
+                            <p className='text-sm text-center text-gray-800'>{ metaData[ 0 ].description }</p>
                         </div>
-                        <p className='text-sm text-center text-gray-800  md:text-lg  md:w-3/4 md:px-8'>{ metaData[ 0 ].description }</p>
+
+                        <div className='bg-[#BB853A99] rounded-2xl py-6 px-4 flex flex-col items-center justify-center gap-4 min-h-[500px]'>
+                            <h1 className='text-md font-semibold '>{ metaData[ 2 ].title }</h1>
+                            <div className=''>
+                                <Image
+                                    src={ metaData[ 2 ].img }
+                                    width={ 100 }
+                                    height={ 100 }
+                                    alt='card1'
+                                />
+                            </div>
+                            <p className='text-sm text-center text-gray-800'>{ metaData[ 2 ].description }</p>
+                        </div>
+                        <div className='bg-[#BB853A99] rounded-2xl py-6 px-4 flex flex-col items-center justify-center gap-4 min-h-[580px]'>
+                            <h1 className='text-md font-semibold '>{ metaData[ 4 ].title }</h1>
+                            <div className=''>
+                                <Image
+                                    src={ metaData[ 4 ].img }
+                                    width={ 100 }
+                                    height={ 100 }
+                                    alt='card1'
+                                />
+                            </div>
+                            <p className='text-sm text-center text-gray-800'>{ metaData[ 4 ].description }</p>
+                        </div>
                     </div>
 
-                    <div className='bg-[#BB853A99] rounded-2xl py-6 px-4 flex flex-col items-center justify-center gap-4 min-h-[500px]'>
-                        <h1 className='text-md font-semibold md:text-2xl'>{ metaData[ 2 ].title }</h1>
-                        <div className=''>
-                            <Image
-                                src={ metaData[ 2 ].img }
-                                width={ 100 }
-                                height={ 100 }
-                                alt='card1'
-                                className='md:w-38'
-                            />
+
+                    <div className='w-[50%] gap-4 flex flex-col '>
+                        <div className='bg-[#BB853A99] rounded-2xl py-6 px-4 flex flex-col items-center justify-center gap-4 min-h-[650px]'>
+                            <h1 className='text-md font-semibold '>{ metaData[ 1 ].title }</h1>
+                            <div className=''>
+                                <Image
+                                    src={ metaData[ 1 ].img }
+                                    width={ 100 }
+                                    height={ 100 }
+                                    alt='card1'
+                                />
+                            </div>
+                            <p className='text-sm text-center text-gray-800'>{ metaData[ 1 ].description }</p>
                         </div>
-                        <p className='text-sm text-center text-gray-800 md:text-lg  md:w-3/4 md:px-8'>{ metaData[ 2 ].description }</p>
-                    </div>
-                    <div className='bg-[#BB853A99] rounded-2xl py-6 px-4 flex flex-col items-center justify-center gap-4 min-h-[580px]'>
-                        <h1 className='text-md font-semibold md:text-2xl'>{ metaData[ 4 ].title }</h1>
-                        <div className=''>
-                            <Image
-                                src={ metaData[ 4 ].img }
-                                width={ 100 }
-                                height={ 100 }
-                                alt='card1'
-                                className='md:w-38'
-                            />
+                        <div className='bg-[#BB853A99] rounded-2xl py-6 px-4 flex flex-col items-center justify-center gap-4 min-h-[375px]'>
+                            <h1 className='text-md font-semibold '>{ metaData[ 3 ].title }</h1>
+                            <div className=''>
+                                <Image
+                                    src={ metaData[ 3 ].img }
+                                    width={ 100 }
+                                    height={ 100 }
+                                    alt='card1'
+                                />
+                            </div>
+                            <p className='text-sm text-center text-gray-800'>{ metaData[ 3 ].description }</p>
                         </div>
-                        <p className='text-sm text-center text-gray-800 md:text-lg  md:w-3/4 md:px-8'>{ metaData[ 4 ].description }</p>
+                        <div className='bg-[#BB853A99] rounded-2xl py-6 px-4 flex flex-col items-center justify-center gap-4 min-h-[375px]'>
+                            <h1 className='text-md font-semibold '>{ metaData[ 5 ].title }</h1>
+                            <div className=''>
+                                <Image
+                                    src={ metaData[ 5 ].img }
+                                    width={ 100 }
+                                    height={ 100 }
+                                    alt='card1'
+                                />
+                            </div>
+                            <p className='text-sm text-center text-gray-800'>{ metaData[ 5 ].description }</p>
+                        </div>
+
                     </div>
+
+
                 </div>
 
 
-                <div className='w-[50%] gap-4 flex flex-col '>
-                    <div className='bg-[#BB853A99] rounded-2xl py-6 px-4 flex flex-col items-center justify-center gap-4 min-h-[650px]'>
-                        <h1 className='text-md font-semibold  md:text-2xl'>{ metaData[ 1 ].title }</h1>
-                        <div className=''>
-                            <Image
-                                src={ metaData[ 1 ].img }
-                                width={ 100 }
-                                height={ 100 }
-                                alt='card1'
-                                className='md:w-38'
-                            />
-                        </div>
-                        <p className='text-sm text-center text-gray-800 md:text-lg  md:w-3/4 md:px-8'>{ metaData[ 1 ].description }</p>
-                    </div>
-                    <div className='bg-[#BB853A99] rounded-2xl py-6 px-4 flex flex-col items-center justify-center gap-4 min-h-[375px]'>
-                        <h1 className='text-md font-semibold md:text-2xl'>{ metaData[ 3 ].title }</h1>
-                        <div className=''>
-                            <Image
-                                src={ metaData[ 3 ].img }
-                                width={ 100 }
-                                height={ 100 }
-                                alt='card1'
-                                className='md:w-38'
-                            />
-                        </div>
-                        <p className='text-sm text-center text-gray-800 md:text-lg  md:w-3/4 md:px-8'>{ metaData[ 3 ].description }</p>
-                    </div>
-                    <div className='bg-[#BB853A99] rounded-2xl py-6 px-4 flex flex-col items-center justify-center gap-4 min-h-[375px]'>
-                        <h1 className='text-md font-semibold md:text-2xl'>{ metaData[ 5 ].title }</h1>
-                        <div className=''>
-                            <Image
-                                src={ metaData[ 5 ].img }
-                                width={ 100 }
-                                height={ 100 }
-                                alt='card1'
-                                className='md:w-38'
-                            />
-                        </div>
-                        <p className='text-sm text-center text-gray-800 md:text-lg  md:w-3/4 md:px-8'>{ metaData[ 5 ].description }</p>
-                    </div>
 
+
+
+
+                <div className='flex w-3/4 h-max py-12 px-2  items-center justify-center md:w-3/4   md:justify-between '>
+                    <h1 className='text-sm font-semibold  w-3/4 text-center md:w-1/2 md:text-xl md:text-left' >"Gift Your Jewelry Business the Power of Online Success – Reach More Customers, Boost Sales, and Shine Brighter in the Digital World!"</h1>
+                    <div className='w-1/3  md:px-6'>
+                        <Image
+                            src={ '/assets/images/gift.png' }
+                            width={ 200 }
+                            height={ 200 }
+                            alt='gift-img'
+                        />
+                    </div>
                 </div>
             </div>
 
-            <div className='flex w-3/4 h-max py-12 px-2  items-center justify-center md:w-3/4   md:justify-between  md:mx-auto'>
-                <h1 className='text-sm font-semibold  w-3/4 text-center md:w-1/2 md:text-xl md:text-left' >"Gift Your Jewelry Business the Power of Online Success – Reach More Customers, Boost Sales, and Shine Brighter in the Digital World!"</h1>
-                <div className='w-1/3  md:px-6'>
-                    <Image
-                        src={ '/assets/images/gift.png' }
-                        width={ 200 }
-                        height={ 200 }
-                        alt='gift-img'
-                    />
-                </div>
-            </div>
+
 
 
         </>
