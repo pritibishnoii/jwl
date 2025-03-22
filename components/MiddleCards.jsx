@@ -1,14 +1,14 @@
 "use client"
 import React, { useState } from 'react'
 import Image from 'next/image'
-import hLine from '../public/assets/images/horizontalLine.png'
-import whyThrive from '../public/assets/images/whyThrive.png'
+import hLine from '../public/assets/images/hLine.svg'
+import whyThrive from '../public/assets/images/th.svg'
 import chartImg from '../public/assets/images/chart.png'
 import coinsImg from '../public/assets/images/coins.png'
 import paintImg from '../public/assets/images/paint.png'
-import robotImg from '../public/assets/images/robot.png'
-import coin from '../public/assets/images/coin.png'
-import howit from '../public/assets/images/howit.png'
+import robotImg from '../public/assets/images/robot.svg'
+import coin from '../public/assets/images/coin.svg'
+import howit from '../public/assets/images/hif.svg'
 
 const MiddleCards = () => {
 

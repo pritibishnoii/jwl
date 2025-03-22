@@ -5,7 +5,8 @@ import { IoIosArrowDroprightCircle } from "react-icons/io";
 import { FaTwitter } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa6";
 import { IoLogoYoutube } from "react-icons/io";
-import jwlFooter from '../public/assets/images/footerjwlnet.png'
+import jwlFooter from '../public/assets/images/net.svg'
+import orangLine from '../public/assets/images/orangLine.svg'
 
 const Footer = () => {
     return (
@@ -45,14 +46,27 @@ const Footer = () => {
                 <hr className='text-white' />
             </div>
 
-            <div className='w-full h-max flex justify-center items-center '>
-                <Image
-                    src={ jwlFooter }
-                    width={ 200 }
-                    height={ 200 }
-                    alt="footerlogo"
-                    className='md:w-3/4'
-                />
+            <div className='w-full h-98 flex relative  justify-center '>
+                <div className='w-1/2 h-max  flex justify-center relative'>
+                    <h1 className='lg:text-[340px] text-white font-bold  absolute -top-28 '>JWL</h1>
+                </div>
+                <div className='relative w-1/2 h-full  flex justify-center pt-40'>
+                    <Image
+                        src={ orangLine }
+                        width={ 400 }
+                        height={ 400 }
+                        alt="img"
+                        className='md:w-120  absolute'
+                    />
+                    <Image
+                        src={ jwlFooter }
+                        width={ 20 }
+                        height={ 20 }
+                        alt="footerlogo"
+                        className='md:w-68 md:h-max absolute'
+
+                    />
+                </div>
             </div>
 
             <div className='w-full '>

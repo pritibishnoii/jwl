@@ -3,9 +3,9 @@ import React from 'react';
 import Navbar from './Navbar';
 import Image from 'next/image';
 import { GoArrowUpRight } from 'react-icons/go';
-import sunImg from '../public/assets/images/suniso.png'
-import coinImg from '../public/assets/images/coin.png'
-import diamondImg from '../public/assets/images/diamond.png'
+import sunImg from '../public/assets/images/star.svg'
+import coinImg from '../public/assets/images/coin.svg'
+import diamondImg from '../public/assets/images/diamond.svg'
 
 const Hero = () => {
     return (
