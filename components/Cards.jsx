@@ -15,7 +15,7 @@ const Cards = () => {
     ]
     return (
         <>
-            <div className='w-full flex gap-4 md:px-[250px] mx-auto'>
+            <div className='w-full flex gap-4 lg:px-[250px] px-5 mx-auto'>
 
 
                 <div className=' gap-4 w-[50%] flex flex-col'>
