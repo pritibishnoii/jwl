@@ -60,7 +60,7 @@ const Footer = () => {
             </div>
 
             <div className='w-full  flex '>
-                <span className='text-white text-sm  w-1/2  md:flex md:justify-center md:text-lg'>© JWLnet | 2025 | All rights reserved</span>
+                <span className='text-white text-sm  w-1/2  md:flex md:justify-center md:text-lg md:py-3'>© JWLnet | 2025 | All rights reserved</span>
 
                 <span className='w-[1px] h-8 bg-white'></span>
 
