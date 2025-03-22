@@ -64,7 +64,7 @@ const Hero = () => {
 
 
                 {/* Coin Image */ }
-                <div className='absolute bottom-0 left-2 sm:left-4'>
+                <div className='absolute bottom-0 left-4 sm:left-4'>
                     <Image
                         src={ coinImg }
                         width={ 150 }

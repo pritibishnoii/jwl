@@ -7,7 +7,12 @@ import { FaInstagram } from "react-icons/fa6";
 import { IoLogoYoutube } from "react-icons/io";
 import jwlFooter from '../public/assets/images/net.svg'
 import orangLine from '../public/assets/images/orangLine.svg'
+import { Libre_Baskerville } from "next/font/google";
 
+const libreBaskerville = Libre_Baskerville( {
+    subsets: [ "latin" ],
+    weight: [ "400", "700" ],
+} );
 const Footer = () => {
     return (
         <div className='bg-[#000000D9] w-full h-max '>
@@ -43,17 +48,20 @@ const Footer = () => {
                 <hr className='text-white' />
             </div>
 
-            <div className='w-[80%] h-98 flex relative  justify-center '>
-                <div className='w-2/3 h-max  flex justify-center relative '>
-                    <h1 className='lg:text-[340px] text-white font-bold  absolute -top-28 '>JWL</h1>
+            <div className='w-full h-max flex flex-col relative overflow-hidden '>
+                <div className='w-3/4 flex px-8  '>
+                    <h1 className={ `relative text-white font-bold 
+                        text-[150px] sm:text-[200px] md:text-[250px] lg:text-[300px] px-38 ${ libreBaskerville.className }` }>
+                        JWL
+                    </h1>
                 </div>
-                <div className='relative w- h-full  flex justify-center pt-40'>
+                <div className='w-full h-full flex justify-center absolute top-75 left-2/3 -translate-x-1/2'>
                     <Image
                         src={ orangLine }
                         width={ 400 }
                         height={ 400 }
                         alt="img"
-                        className='md:w-120  absolute'
+                        className='md:w-120 absolute'
                     />
                     <Image
                         src={ jwlFooter }
@@ -64,7 +72,13 @@ const Footer = () => {
                     />
                 </div>
             </div>
-            <div className='w-full '>
+
+
+
+
+
+
+            <div className='w-full py-12 '>
                 <hr className='text-white' />
             </div>
             <div className='w-full  flex '>

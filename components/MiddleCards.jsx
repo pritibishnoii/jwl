@@ -2,13 +2,17 @@
 import React, { useState } from 'react'
 import Image from 'next/image'
 import hLine from '../public/assets/images/hLine.svg'
-import whyThrive from '../public/assets/images/th.svg'
 import chartImg from '../public/assets/images/chart.png'
 import coinsImg from '../public/assets/images/coins.png'
 import paintImg from '../public/assets/images/paint.png'
 import robotImg from '../public/assets/images/robot.svg'
 import coin from '../public/assets/images/coin.svg'
 import howit from '../public/assets/images/hif.svg'
+import star from '../public/assets/images/star.svg'
+import wtecom from '../public/assets/images/ecommerc.svg'
+import orangeBg from '../public/assets/images/orangLine.svg'
+import howItFun from '../public/assets/images/howItFun.svg'
+import yBG from '../public/assets/images/yBg.svg'
 
 const MiddleCards = () => {
 
@@ -60,14 +64,34 @@ const MiddleCards = () => {
                 </div>
 
                 {/* third row */ }
-                <div className='w-1/2 flex items-center justify-center h-68'>
-                    <Image
-                        src={ whyThrive }
-                        width={ 500 }
-                        height={ 500 }
-                        alt="why thrive"
-                        className='w-48 md:w-64 lg:w-80'
-                    />
+                <div className='w-1/2 flex flex-col items-center justify-center h-68 '>
+                    <div className='w-full h-max flex justify-center relative  '>
+                        <Image
+                            src={ star }
+                            width={ 0 }
+                            height={ 0 }
+                            alt="why thrive"
+                            className='w-12  h-max absolute top-10 left-68'
+                        />
+                    </div>
+                    <div className='w-full h-full  flex justify-center relative '>
+
+                        <Image
+                            src={ wtecom }
+                            width={ 50 }
+                            height={ 50 }
+                            alt="why thrive"
+                            className='w-48 md:w-48 lg:w-80 z-10 '
+                        />
+                        <Image
+                            src={ orangeBg }
+                            width={ 50 }
+                            height={ 50 }
+                            alt="why thrive"
+                            className='w-98  lg:w-80 absolute  top-25 left-38 '
+                        />
+                    </div>
+
                 </div>
             </div>
 
@@ -76,7 +100,7 @@ const MiddleCards = () => {
                 { metaData.map( ( items, index ) => {
                     return (
                         <div
-                            className={ `flex justify-between  gap-2 h-max hover:bg-[#BB853A] transition-transform duration-300 ease-in-out cursor-pointer  ${ activeCard === index ? 'bg-[#BB853A]' : 'bg-white border-b border-[#ABABAB] ' }` }
+                            className={ `flex justify-between  gap-2 h-max  transition-transform duration-300 ease-in-out cursor-pointer  ${ activeCard === index ? 'bg-[#BB853A]' : 'bg-white border-b border-[#ABABAB] ' }` }
                             key={ items.id }
                             onClick={ () => setActiveCard( index ) }
                         >
@@ -99,14 +123,42 @@ const MiddleCards = () => {
 
             {/* image robot */ }
             <div className='flex w-full h-max py-2 items-center px-4 md:px-8 lg:px-16 '>
-                <div className='w-1/2 h-max'>
-                    <Image
-                        src={ howit }
-                        width={ 200 }
-                        height={ 200 }
-                        alt="img"
-                        className='w-32 md:w-68 lg:w-98'
-                    />
+                <div className='w-1/2 h-max  flex flex-col justify-center relative  items-center'>
+
+                    <div className='relative flex flex-col'>
+                        <div className='w-full px-12'>
+                            <Image
+                                src={ star }
+                                width={ 2 }
+                                height={ 2 }
+                                alt="img"
+                                className=' md:w-12 lg:w-16 '
+                            />
+                        </div>
+                        <Image
+                            src={ howItFun }
+                            width={ 200 }
+                            height={ 200 }
+                            alt="img"
+                            className='w-32 md:w-68 lg:w-98 '
+                        />
+                        <Image
+                            src={ orangeBg }
+                            width={ 200 }
+                            height={ 200 }
+                            alt="img"
+                            className='w-32 md:w-68 lg:w-98 absolute top-35 -left-8'
+                        />
+                    </div>
+                    <div className='w-max h-max '>
+                        <Image
+                            src={ yBG }
+                            width={ 200 }
+                            height={ 200 }
+                            alt="img"
+                            className='w-32 md:w-68 lg:w-98'
+                        />
+                    </div>
                 </div>
                 <div className='w-1/2 flex justify-between py-4 items-center'>
                     <div className='w-3/4 h-max '>

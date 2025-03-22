@@ -1,5 +1,12 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { Bricolage_Grotesque } from "next/font/google";
+
+const bricolage = Bricolage_Grotesque( {
+  subsets: [ "latin" ],
+  weight: [ "400", "700" ],
+} );
+
 
 const geistSans = Geist( {
   variable: "--font-geist-sans",
@@ -20,7 +27,7 @@ export default function RootLayout ( { children } ) {
   return (
     <html lang="en">
       <body
-        className={ `${ geistSans.variable } ${ geistMono.variable } antialiased` }
+        className={ `${ geistSans.variable } ${ geistMono.variable } antialiased ${ bricolage.className }` }
       >
         { children }
       </body>
